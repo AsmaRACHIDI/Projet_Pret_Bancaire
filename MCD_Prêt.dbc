@@ -1,0 +1,7 @@
+Loan: LoanID [TEXT],, Loan_ID, LoanAmount, Loan_Amount_Term, Loan_Status
+
+Avoir, _11 Loan, _1N Client
+
+Client: Client_ID[COUNTER],, Gender, Married, Dependents, Education, Self_Employed, Credit_History, ApplicantIncome, CoapplicantIncome
+Possède, _11 Client, _1N Property_Area
+Property_Area: Property_Area_ID [COUNTER],, Property_Area
