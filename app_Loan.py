@@ -1,6 +1,7 @@
 from flask import Flask,render_template,request,url_for
 import pickle
 import numpy as np
+from regex import E
 from sklearn.model_selection import train_test_split 
 from sklearn.linear_model import LogisticRegression
 import sklearn
@@ -18,12 +19,12 @@ def hello():
 @app.route('/predict',methods=["POST", "GET"])
 def predict():
     feature=[float(x) for x in request.form.values()]
-    #e=[[1.2,1.5,1.6,1.2]]
-    #print('The scikit-learn version is {}.'.format(sklearn.__version__))
-    #print(e)
-    feature_final=np.array(feature).reshape(1,-1)
-    print(feature_final)
     ### Scaler mes valeurs
+    e=[[0, 1, 2, 1, 0, 6344443, 4754440, 130, 360, 1, 1]]
+    #print('The scikit-learn version is {}.'.format(sklearn.__version__))
+    print(e)
+    feature_final=np.array(e).reshape(1,-1)
+    print(feature_final)
     
     prediction=model.predict(feature_final)
     #prediction=model.predict(e)
