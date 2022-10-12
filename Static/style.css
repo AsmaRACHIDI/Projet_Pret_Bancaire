@@ -1,0 +1,22 @@
+.button {
+    background-color: rgb(11, 64, 144);
+    border: 2px solid #020353;
+    color: whitesmoke;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    width: 18%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px 0 #000; 
+    }
+    body {
+    background-image: linear-gradient(to bottom, rgba(48, 207, 208, 0.95), rgba(51, 8, 103, 0.95));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    h1{
+    color: rgb(11, 64, 144);
+    }
+    
